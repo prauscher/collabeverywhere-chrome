@@ -1,0 +1,14 @@
+{
+	"extName": {
+		"message": "Etherpad Integration",
+		"description": "Extension name."
+	},
+	"extDescription": {
+		"message": "Verwandle jedes Textfeld einfach in ein kollaboratives Etherpad Lite.",
+		"description": "Extension description."
+	},
+	"contextTitle": {
+		"message": "Kollaborativ bearbeiten",
+		"description": "Context-Menu Item-Title."
+	}
+}
