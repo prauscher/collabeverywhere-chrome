@@ -2,10 +2,22 @@
 	"name": "__MSG_extName__",
 	"description": "__MSG_extDescription__",
 	"version": "0.1",
-	"permissions": ["contextMenus"],
-	"background": {
-		"scripts": ["eplite-context.js"]
-	},
+	"permissions": ["tabs", "contextMenus", "http://*/*", "https://*/*"],
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js" : ["jquery/jquery.min.js", "generateLiteContainer.js"],
+			"run_at": "document_start",
+			"all_frames": false
+		},
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js" : ["rightclick_hook.js"],
+			"run_at": "document_end",
+			"all_frames": false
+		}
+	],
+	"background_page": "background.html",
 	"manifest_version": 1,
 	"default_locale": "de"
 }
