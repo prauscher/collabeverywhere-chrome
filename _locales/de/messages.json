@@ -10,5 +10,9 @@
 	"contextTitle": {
 		"message": "Kollaborativ bearbeiten",
 		"description": "Context-Menu Item-Title."
+	},
+	"cancelButtonLabel": {
+		"message": "Speichern",
+		"description": "Buttontext"
 	}
 }

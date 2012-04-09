@@ -1,3 +1,11 @@
 .hiddenTextbox {
 	display:none;
 }
+
+.control {
+	background-color:#cccccc;
+}
+.control a {
+	text-decoration:none;
+	color:black;
+}
