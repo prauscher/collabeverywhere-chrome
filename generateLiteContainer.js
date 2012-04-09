@@ -5,7 +5,7 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
 	}
 
 	var textbox = $(rightclicked_item);
-	var link = $.post("http://collabeverywhere.net/publicapi/0/createPad", { "text" : textbox.val() }, function (data) {
+	$.post("http://collabeverywhere.net/publicapi/0/createPad", { "text" : textbox.val() }, function (data) {
 		var padURL = data.data.host + data.data.baseUrl + data.data.padID;
 
 		var frame = $("<iframe>")	.attr("src", padURL + "?showControls=false")

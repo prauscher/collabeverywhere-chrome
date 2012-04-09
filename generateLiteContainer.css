@@ -5,7 +5,15 @@
 .control {
 	background-color:#cccccc;
 }
-.control a {
-	text-decoration:none;
-	color:black;
+.control button {
+	border: 1px solid black;
+	border-radius: 3px;
+	width:90px;
+}
+.control input {
+	border: 1px solid black;
+	border-radius: 3px;
+	position:absolute;
+	left:100px;
+	right:0px;
 }
