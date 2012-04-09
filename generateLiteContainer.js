@@ -1,10 +1,19 @@
 chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
+	if (request.type == "generateLiteContainer_pageAction") {
+		generateLiteContainer(clicked_item);
+	}
+	if (request.type == "generateLiteContainer_context") {
+		generateLiteContainer(rightclicked_item);
+	}
+});
+
+function generateLiteContainer(item) {
 	// In some cases, we are not the correct frame ;-)
-	if (rightclicked_item == null) {
+	if (item == null) {
 		return;
 	}
 
-	var textbox = $(rightclicked_item);
+	var textbox = $(item);
 	$.post("http://collabeverywhere.net/publicapi/0/createPad", { "text" : textbox.val() }, function (data) {
 		var padURL = data.data.host + data.data.baseUrl + data.data.padID;
 
@@ -38,5 +47,4 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
 
 		textbox.addClass("hiddenTextbox").after(control);
 	}, "json");
-});
-
+}

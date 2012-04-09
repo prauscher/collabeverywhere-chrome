@@ -1,13 +1,17 @@
 {
 	"name": "__MSG_extName__",
 	"description": "__MSG_extDescription__",
-	"version": "0.2",
+	"version": "0.3",
 	"permissions": ["tabs", "contextMenus", "http://*/*", "https://*/*"],
 	"background": {
 			"scripts" : ["background.js"]
 		},
 	"manifest_version": 3,
 	"default_locale": "de",
+	"page_action": {
+		"default_icon": "icons/19.png",
+		"default_title": "__MSG_pageActionTitle__"
+	},
 	"content_scripts": [
 		{
 			"matches": ["http://*/*", "https://*/*"],

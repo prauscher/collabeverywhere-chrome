@@ -15,6 +15,10 @@
 		"message": "Speichern",
 		"description": "Buttontext"
 	},
+	"pageActionTitle": {
+		"message": "Kollaborativ bearbeiten",
+		"description": "Title of Page Action"
+	},
 	"padsStillOpen": {
 		"message": "Es sind noch kollaborative Editoren geöffnet. Bitte schließe diese, bevor du das Formular absendest.",
 		"description": "Alertbox"
