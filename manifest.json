@@ -7,7 +7,7 @@
 		{
 			"matches": ["http://*/*", "https://*/*"],
 			"css" : ["generateLiteContainer.css"],
-			"js" : ["jquery/jquery.min.js", "generateLiteContainer.js"],
+			"js" : ["js/jquery-1.7.1.min.js", "generateLiteContainer.js"],
 			"run_at": "document_start",
 			"all_frames": true
 		},
