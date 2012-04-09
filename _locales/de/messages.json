@@ -14,5 +14,9 @@
 	"cancelButtonLabel": {
 		"message": "Speichern",
 		"description": "Buttontext"
+	},
+	"padsStillOpen": {
+		"message": "Es sind noch kollaborative Editoren geöffnet. Bitte schließe diese, bevor du das Formular absendest.",
+		"description": "Alertbox"
 	}
 }

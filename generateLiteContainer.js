@@ -21,6 +21,13 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
 						.attr("height", textbox.height())
 						.attr("width", textbox.width());
 
+		textbox.parent("form").submit(function() {
+			if ($(this).find(".hiddenTextbox").size() > 0) {
+				alert(chrome.i18n.getMessage("padsStillOpen"));
+				return false;
+			}
+		});
+
 		button.click(function () {
 			$.get(padURL + "/export/txt", function (text) {
 				textbox.val(text);
@@ -32,3 +39,4 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
 		textbox.addClass("hiddenTextbox").after(control);
 	}, "json");
 });
+
