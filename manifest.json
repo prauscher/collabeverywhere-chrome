@@ -6,15 +6,16 @@
 	"content_scripts": [
 		{
 			"matches": ["http://*/*", "https://*/*"],
+			"css" : ["generateLiteContainer.css"],
 			"js" : ["jquery/jquery.min.js", "generateLiteContainer.js"],
 			"run_at": "document_start",
-			"all_frames": false
+			"all_frames": true
 		},
 		{
 			"matches": ["http://*/*", "https://*/*"],
 			"js" : ["rightclick_hook.js"],
 			"run_at": "document_end",
-			"all_frames": false
+			"all_frames": true
 		}
 	],
 	"background_page": "background.html",
