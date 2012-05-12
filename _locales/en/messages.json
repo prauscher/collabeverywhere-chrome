@@ -1,0 +1,26 @@
+{
+        "extName": {
+                "message": "Etherpad Integration",
+                "description": "Extension name."
+        },
+        "extDescription": {
+                "message": "Convert every textarea into a collaborative Etherpad Lite.",
+                "description": "Extension description."
+        },
+        "contextTitle": {
+                "message": "edit collaborative",
+                "description": "Context-Menu Item-Title."
+        },
+        "cancelButtonLabel": {
+                "message": "Save",
+                "description": "Buttontext"
+        },
+        "pageActionTitle": {
+                "message": "edit collaborative",
+                "description": "Title of Page Action"
+        },
+        "padsStillOpen": {
+                "message": "There are some collaborative textareas open. Please close them before submitting the formular.",
+                "description": "Alertbox"
+        }
+}
